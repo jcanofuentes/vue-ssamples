@@ -37,6 +37,18 @@ the display property set to flex.*/
   width: 500px;
 }
 
+.flex-container .flex-item-summary {
+  width: 300px;
+}
+
+.summary {
+  list-style: none;
+}
+
+.summary .item {
+  margin: 10 0 0 0;
+  font-size: 12;
+}
 /* Give it a format to all our divs inside
    the flex layout  */
 .flex-container > div {

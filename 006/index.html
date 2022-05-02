@@ -1,0 +1,50 @@
+<!--
+We have to add the parameter v-model to each input. In this way we can link
+inputs and variables, and visualize them in real-time
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>My VUE</title>
+</head>
+
+<body>
+  <h1>MyVueBLOG</h1>
+  <div id="app">
+    <!-- Inputs -->
+    <h2>New post</h2>
+    <h3>Title</h3>
+    <input v-model="newtitle" placeholder="Write the title"/>
+    <h3>Post</h3>
+    <textarea cols="50" v-model="newpost" placeholder="Write the post">
+    </textarea>
+    <h2> {{ newtitle }} </h2>
+    <p> {{ newpost }} </p>
+    <!-- Visualización -->
+    <div class="flex-container">
+      <div class="flex-item flex-item-content">
+        <h2>Content</h2>
+        <h3>{{title_01}}</h3>
+        {{post_01}}
+        <h3>{{title_02}}</h3>
+        {{post_02}}
+        <h3>{{title_03}}</h3>
+        {{post_03}}
+      </div>
+      <div class="flex-item flex-item-summary">
+        <h2>{{message}}</h2>
+        <ul class="summary">
+          <li class="item">{{title_01}}</li>
+          <li class="item">{{title_02}}</li>
+          <li class="item">{{title_03}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="vue-script.js"></script>
+</body>
+
+</html>

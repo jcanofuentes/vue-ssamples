@@ -1,0 +1,11 @@
+body {
+  background-color:gainsboro ;
+}
+
+.console {
+  list-style: decimal;
+  color: #212121;
+  padding: 40;
+  background-color: #8bc34a;
+  border-style: solid;
+}

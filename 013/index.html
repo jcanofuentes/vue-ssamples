@@ -10,18 +10,25 @@
 <body>
   <div id="app">
       <h1>{{ title }}</h1>
+      <div class="button">
+        <button type="button" v-on:click="handleClick">Cargar imagen nueva</button>
+      </div>
+      <div class="image">
+        <img v-bind:src="image">
+      </div>
   </div>
-    <ul id="myULContainer" class="console"></ul>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- Console -->
+  <ul id="myULContainer" class="console"></ul>
   <script type="application/javascript" src="https://cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
   <script>
-    // Redirect log messages
     ConsoleLogHTML.connect(document.getElementById("myULContainer"),ConsoleLogHTML.DEFAULTS,false,true,true);
-    // Stop redirecting
     // ConsoleLogHTML.disconnect();
   </script>
-   <script src="vue-script.js"></script>
+  <!-- end console -->
+
+  <script src="vue-script.js"></script>
 </body>
 
 </html>
